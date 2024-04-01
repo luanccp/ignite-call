@@ -21,7 +21,7 @@ const registerFormSchema = z.object({
 type TRegisterFormData = z.infer<typeof registerFormSchema>;
 
 const Register = () => {
-  const { query } = useRouter();
+  const { query, push } = useRouter();
   const {
     register,
     handleSubmit,
@@ -35,6 +35,7 @@ const Register = () => {
         name: data.name,
         username: data.username,
       });
+      await push("/register/connect-calendar");
     } catch (error) {
       if (error instanceof AxiosError && error?.response?.data?.message) {
         alert(error.response.data.message);
