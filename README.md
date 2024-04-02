@@ -6,3 +6,4 @@
 - Cookies + next (nookies)
 - Zod
 - React-hook-forms
+- NextAuth.js
