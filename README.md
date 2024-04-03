@@ -1,7 +1,7 @@
 # Used stuff
 
 - Next
-- Prisma
+- Prisma (creating prisma adapter)
 - Axios
 - Cookies + next (nookies)
 - Zod
